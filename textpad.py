@@ -64,7 +64,7 @@ except:
 
 try:
     f = open("exploit6.txt","w")
-    print("[+] Creating %s bytes evil payload.." %len(payload3))
+    print("[+] Creating %s bytes evil payload.." %len(payload6))
     f.write(payload6)
     f.close()
     print("[+] File created!")
