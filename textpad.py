@@ -13,7 +13,7 @@ payload4 = buffer4
 payload5 = buffer5
 payload6 = buffer6
 
-random_file_name = ”.join(random.choices(string.ascii_letters + string.digits, k=10)) + ".txt"
+random_file_name = ”.join(random.choices(string.ascii_letters + string.digits, k=1000)) + ".txt"
 
 while True:
     try:
