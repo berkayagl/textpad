@@ -1,3 +1,6 @@
+import random
+import string
+
 buffer = "A\n" * 9223372036854775807
 buffer2 = "B\n" * 9223372036854775807
 buffer3 = "C\n" * 9223372036854775807
